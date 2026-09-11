@@ -5,23 +5,68 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            margin: 170px 250px 100px 250px;
+            background-image: url("https://i.pinimg.com/736x/7e/bb/09/7ebb09502cedff679d89a6c7b98af673.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
         }
+
+        /* margin: top right bottom left */
 
         .main-container {
             background-color: #fafafa;
-            margin: 100px;
-            padding: 10px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            border-radius: 5px;
+            border-color: black;
+            border-style: solid;
+            border-width: 2px;
         }
+
+        .main-container-contents-right {
+            padding: 10px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            margin: 0;
+        }
+
+        .main-container-contents-left {
+            padding: 10px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            background-color: #bababa;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                margin: 10px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100vh;
+            }
+
+            .main-container-contents-left {
+                line-height: normal;
+            }
+            
+        }
+
     </style>
 </head>
 
 <body>
     <div class="main-container">
-        <p>Hello! I'm King ★</p><img src="https://i.pinimg.com/736x/8e/28/51/8e285136bfc263e490364d4faff381f1.jpg" width="100px">
-        <p>they - neurodivergent (audhd)</p>
-        <p>I am interested in coding, I like martial arts, I enjoy watching dramas and playing games :3</p>
-        <p>Here is my GitHub!</p>
-        <p>I make make this a kind of blog~</p>
+        <div class="main-container-contents-left">
+            <h2 style="line-height: 0;">Hello! I'm King ★</h2>
+            <p>they . <b>minor</b> . <u>audhd</u> . <i>tonetags</i> pref but not needed~</p>
+            <p align="center" style="margin: 0;"><img src="https://i.pinimg.com/1200x/34/b8/99/34b899f80e556f545dbdf7c691e490c7.jpg" width="70%"></p>
+            <p align="center" style="margin: 0;">^^^^</p>
+            <p align="center" style="margin: 0;"><b>NOT IMAGE OF ME</b>, this is Jeff Satur!</p>
+        </div>
+        <div class="main-container-contents-right">
+            <p>I am interested in coding, I like martial arts, I enjoy watching dramas and playing games :3</p>
+            <p>Here is my GitHub!</p>
+        </div>
     </div>
 </body>
 
